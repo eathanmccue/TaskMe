@@ -6,7 +6,9 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4100044-dcc7-4958-82cb-c9c149bb7410" name="Default Changelist" comment="" />
+    <list default="true" id="c4100044-dcc7-4958-82cb-c9c149bb7410" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,13 +28,8 @@
     </system>
   </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="Tolga" />
-      </list>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1jtSNRBbgycGVe8J76uWt9qPFNG" />
   <component name="ProjectViewState">
@@ -132,27 +129,20 @@
       <updated>1604632105195</updated>
     </task>
     <task id="LOCAL-00003" summary="added calendar widget">
-      <created>1604704163492</created>
+      <created>1604632988887</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1604704163492</updated>
+      <updated>1604632988887</updated>
     </task>
-    <task id="LOCAL-00004" summary="added calendar widget - Tolga">
-      <created>1604704250477</created>
+    <task id="LOCAL-00004" summary="testing changes between 2 people">
+      <created>1604704031545</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1604704250477</updated>
+      <updated>1604704031545</updated>
     </task>
-    <task id="LOCAL-00005" summary="added calendar widget - Tolga">
-      <created>1604704322332</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1604704322332</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -193,43 +183,29 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added calendar widget" />
-    <MESSAGE value="added calendar widget - Tolga" />
-    <option name="LAST_COMMIT_MESSAGE" value="added calendar widget - Tolga" />
+    <MESSAGE value="testing changes between 2 people" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing changes between 2 people" />
   </component>
   <component name="WindowStateProjectService">
     <state x="368" y="130" key="#TODO" timestamp="1604622453825">
       <screen x="0" y="23" width="1536" height="880" />
     </state>
     <state x="368" y="130" key="#TODO/0.23.1536.880@0.23.1536.880" timestamp="1604622453825" />
-    <state x="484" y="50" key="CommitChangelistDialog2" timestamp="1604704342423">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="387" y="65" width="1020" height="800" key="CommitChangelistDialog2" timestamp="1604704031401">
+      <screen x="0" y="23" width="1536" height="880" />
     </state>
-    <state x="484" y="50" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1604704342423" />
-    <state x="387" y="65" key="CommitChangelistDialog2/0.23.1536.880@0.23.1536.880" timestamp="1604632105032" />
+    <state x="387" y="65" width="1020" height="800" key="CommitChangelistDialog2/0.23.1536.880@0.23.1536.880" timestamp="1604704031401" />
     <state x="154" y="100" key="DiffContextDialog" timestamp="1604622302030">
       <screen x="0" y="23" width="1536" height="880" />
     </state>
     <state x="154" y="100" key="DiffContextDialog/0.23.1536.880@0.23.1536.880" timestamp="1604622302030" />
-    <state x="227" y="81" key="MergeDialog" timestamp="1604704425862">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="227" y="81" key="MergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604704425862" />
-    <state x="715" y="231" key="MultipleFileMergeDialog" timestamp="1604704434746">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="715" y="231" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604704434746" />
-    <state x="790" y="231" key="VCS.ChangeListViewerDialog" timestamp="1604704352263">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="790" y="231" key="VCS.ChangeListViewerDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604704352263" />
     <state x="368" y="203" key="Vcs.Push.Dialog.v2" timestamp="1604632109009">
       <screen x="0" y="23" width="1536" height="880" />
     </state>
     <state x="368" y="203" key="Vcs.Push.Dialog.v2/0.23.1536.880@0.23.1536.880" timestamp="1604632109009" />
-    <state x="685" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604704355961">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="548" y="387" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604703595296">
+      <screen x="0" y="23" width="1536" height="880" />
     </state>
-    <state x="685" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604704355961" />
-    <state x="548" y="387" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1536.880@0.23.1536.880" timestamp="1604622268146" />
+    <state x="548" y="387" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1536.880@0.23.1536.880" timestamp="1604703595296" />
   </component>
 </project>
