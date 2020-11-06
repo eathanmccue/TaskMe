@@ -1,3 +1,11 @@
-- [x] Create repository
-- [x] Figure out how to do lists
-- [ ] add the rest of the tasks to this list
+- [x] Create repository.
+- [x] Figure out how to do lists.
+- [ ] Edit calendar widget to match mockup style.
+- [ ] Add / edit design of TextView for current date.
+- [ ] Add / edit design of TextView for todays reminders/goals/etc.
+- [ ] Add "+" (new event) button.
+- [ ] Create new task activity (includes location, recurrence, etc.)
+- [ ] Create goals activity (prompt user to answer questions).
+- [ ] Add notifications / reminders.
+- [ ] Add country-specific dates/holidays to calendar.
+- [ ] Add motivational quotes activity.
