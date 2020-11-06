@@ -1,2 +1,3 @@
 - [x] Create repository
-- [ ] Figure out how to do lists
+- [x] Figure out how to do lists
+- [ ] add the rest of the tasks to this list
