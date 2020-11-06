@@ -1,2 +1,2 @@
-- [x] Create repository
-- [ ] Figure out to do lists
+ [x] Create repositor
+ [ ] Figure out how to do lists
