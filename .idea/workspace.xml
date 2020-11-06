@@ -6,9 +6,9 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4100044-dcc7-4958-82cb-c9c149bb7410" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
+    <list default="true" id="c4100044-dcc7-4958-82cb-c9c149bb7410" name="Default Changelist" comment="added calendar widget">
+      <change afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/angryimg.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
@@ -41,6 +41,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -52,7 +53,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -115,6 +116,14 @@
       <option name="presentableId" value="Default" />
       <updated>1604621854433</updated>
     </task>
+    <task id="LOCAL-00001" summary="added calendar widget">
+      <created>1604622455847</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604622455847</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -153,11 +162,19 @@
       </set>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added calendar widget" />
+    <option name="LAST_COMMIT_MESSAGE" value="added calendar widget" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="387" y="65" key="CommitChangelistDialog2" timestamp="1604622421168">
+    <state x="368" y="130" key="#TODO" timestamp="1604622453825">
       <screen x="0" y="23" width="1536" height="880" />
     </state>
-    <state x="387" y="65" key="CommitChangelistDialog2/0.23.1536.880@0.23.1536.880" timestamp="1604622421168" />
+    <state x="368" y="130" key="#TODO/0.23.1536.880@0.23.1536.880" timestamp="1604622453825" />
+    <state x="387" y="65" key="CommitChangelistDialog2" timestamp="1604622484855">
+      <screen x="0" y="23" width="1536" height="880" />
+    </state>
+    <state x="387" y="65" key="CommitChangelistDialog2/0.23.1536.880@0.23.1536.880" timestamp="1604622484855" />
     <state x="154" y="100" key="DiffContextDialog" timestamp="1604622302030">
       <screen x="0" y="23" width="1536" height="880" />
     </state>
