@@ -9,3 +9,4 @@
 - [ ] Add notifications / reminders.
 - [ ] Add country-specific dates/holidays to calendar.
 - [ ] Add motivational quotes activity.
+- [ ] Add events invitations.
