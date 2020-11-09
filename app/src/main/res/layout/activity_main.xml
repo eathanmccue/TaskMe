@@ -4,19 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
     tools:context=".MainActivity">
-
-    <ImageView
-        android:id="@+id/background"
-        android:layout_width="494dp"
-        android:layout_height="852dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.795"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.504"
-        app:srcCompat="@drawable/angryimg" />
 
     <TextView
         android:id="@+id/title"
@@ -31,16 +20,50 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/taskHeader"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:padding="12dp"
+        android:text="@string/displayTaskTitle"
+        android:textAlignment="viewStart"
+        android:textColor="#FFF176"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+
     <CalendarView
         android:id="@+id/calendarView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginHorizontal="30dp"
         android:background="#6622212E"
         android:focusedMonthDateColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <Button
+        android:id="@+id/push_button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_bg_round"
+        android:text="@string/newEvent"
+        android:textSize="42dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
