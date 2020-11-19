@@ -1,28 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="0dp"
-        android:layout_height="73dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:padding="12dp"
         android:text="@string/app_name"
         android:textColor="#FFF176"
         android:textSize="36sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="start" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/calendar_background"
+        android:theme="@style/CalenderViewCustom"
+        android:dateTextAppearance="@style/CalenderViewDateCustomText"
+        android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"
+        android:layout_gravity="center"/>
 
     <TextView
         android:id="@+id/taskHeader"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="66dp"
         android:padding="12dp"
         android:text="@string/displayTaskTitle"
@@ -30,22 +39,7 @@
         android:textColor="#FFF176"
         android:textSize="28sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
-
-    <CalendarView
-        android:id="@+id/calendarView"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginHorizontal="30dp"
-        android:background="#6622212E"
-        android:focusedMonthDateColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/guideline2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title" />
+        android:layout_gravity="start"/>
 
     <Button
         android:id="@+id/push_button"
@@ -55,15 +49,10 @@
         android:layout_marginBottom="16dp"
         android:background="@drawable/button_bg_round"
         android:text="@string/newEvent"
-        android:textSize="42dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:textSize="42sp"
+        android:layout_gravity="center"
+        />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.5" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
