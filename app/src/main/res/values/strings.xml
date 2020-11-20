@@ -3,4 +3,9 @@
     <string name="test1">testTOLGA</string>
     <string name="newEvent">+</string>
     <string name="displayTaskTitle">Tasks for today</string>
+    <string name="title">Create an Event</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="date">Date:</string>
+    <string name="time">Time:</string>
 </resources>
