@@ -4,8 +4,11 @@
     <string name="newEvent">+</string>
     <string name="displayTaskTitle">Tasks for today</string>
     <string name="title">Create an Event</string>
-    <string name="name">Name</string>
-    <string name="description">Description</string>
+    <string name="name">Event Name</string>
+    <string name="description">Event Description</string>
     <string name="date">Date:</string>
     <string name="time">Time:</string>
+    <string name="save">Save</string>
+    <string name="dateHint">dd/mm/yyyy</string>
+    <string name="timeHint">23:59</string>
 </resources>
