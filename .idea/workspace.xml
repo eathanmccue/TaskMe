@@ -16,10 +16,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4100044-dcc7-4958-82cb-c9c149bb7410" name="Default Changelist" comment="newEvent button opens the activity_create_event.xml&#10;added save button to activity_create_event.xml which sends back to main&#10;added red/orange gradient; gradient_background_red.xml&#10;added EditText variables to CreateEvent.java&#10;**need to send EditText values back to main to be displayed**">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c4100044-dcc7-4958-82cb-c9c149bb7410" name="Default Changelist" comment="FIXED" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -213,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606374016936</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="FIXED">
+      <created>1606376300324</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1606376300324</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -265,7 +269,8 @@
     <MESSAGE value="THIS IS TOLGA! IM WORKING ON THE CREATE ACTIVITY LAYOUT!! I JUST ADDED SOME BOXES AND STUFF HAVENT MADE ANY STRINGS YET!!!!!" />
     <MESSAGE value="newEvent button opens the activity_create_event.xml&#10;added save button to activity_create_event.xml which sends back to main&#10;added red/orange gradient; gradient_background_red.xml&#10;added EditText variables to CreateEvent.java&#10;**need to send EditText values back to main to be displayed**" />
     <MESSAGE value="blah" />
-    <option name="LAST_COMMIT_MESSAGE" value="blah" />
+    <MESSAGE value="FIXED" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIXED" />
   </component>
   <component name="WindowStateProjectService">
     <state x="368" y="130" key="#TODO" timestamp="1604622453825">
@@ -305,10 +310,11 @@
       <screen x="0" y="23" width="1536" height="880" />
     </state>
     <state width="1494" height="342" key="GridCell.Tab.0.right/0.23.1536.880@0.23.1536.880" timestamp="1606264596057" />
-    <state x="368" y="203" key="Vcs.Push.Dialog.v2" timestamp="1606374304156">
-      <screen x="0" y="23" width="1536" height="880" />
+    <state x="613" y="286" key="Vcs.Push.Dialog.v2" timestamp="1606376304457">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="460" y="213" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605845316930" />
+    <state x="613" y="286" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.-363.1536.824@0.0.2560.1400" timestamp="1606376304457" />
     <state x="368" y="203" key="Vcs.Push.Dialog.v2/0.23.1536.880@0.23.1536.880" timestamp="1606374304156" />
     <state x="685" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605843691166">
       <screen x="0" y="0" width="1920" height="1040" />
