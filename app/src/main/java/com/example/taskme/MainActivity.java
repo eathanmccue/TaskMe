@@ -30,12 +30,13 @@ public class MainActivity extends AppCompatActivity {
         tasksListView.setAdapter(tasksListAdapter);
 
     }
-
+    // Real event
     public void newEvent(View view) {
         Intent intent = new Intent(this, CreateEvent.class);
         startActivity(intent);
     }
 
+    // Testing event, will be removed later.
     public void addEvent(View view) {
         tasksList.add("New item!");
         tasksListAdapter.notifyDataSetChanged();
