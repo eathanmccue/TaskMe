@@ -200,7 +200,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline8" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/reminderNum"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -212,7 +212,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextNumber2"
+        android:id="@+id/repeatNum"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -224,7 +224,7 @@
         app:layout_constraintStart_toStartOf="@+id/guideline9" />
 
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/reminder"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center"
@@ -233,13 +233,13 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="Reminder"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNumber"
+        app:layout_constraintBottom_toTopOf="@+id/reminderNum"
         app:layout_constraintEnd_toStartOf="@+id/guideline9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
     <Switch
-        android:id="@+id/switch2"
+        android:id="@+id/repeat"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center"
@@ -248,13 +248,13 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="Repeat"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNumber2"
+        app:layout_constraintBottom_toTopOf="@+id/repeatNum"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline9"
         app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/flag"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
@@ -269,7 +269,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline7" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/goal"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="16dp"
