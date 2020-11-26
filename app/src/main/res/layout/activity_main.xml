@@ -24,7 +24,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:onClick="newEvent"
-        />
         android:gravity="center"
         android:orientation="horizontal">
 
