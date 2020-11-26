@@ -2,11 +2,9 @@ package com.example.taskme;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-import android.widget.RelativeLayout;
 
 import java.util.ArrayList;
 
@@ -29,6 +27,11 @@ public class MainActivity extends AppCompatActivity {
 
         tasksListView.setAdapter(tasksListAdapter);
 
+    }
+
+    public void newEvent(View view) {
+        Intent intent = new Intent(this, CreateEvent.class);
+        startActivity(intent);
     }
 
     public void addEvent(View view) {
