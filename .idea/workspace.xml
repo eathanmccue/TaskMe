@@ -8,18 +8,21 @@
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4100044-dcc7-4958-82cb-c9c149bb7410" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c4100044-dcc7-4958-82cb-c9c149bb7410" name="Default Changelist" comment="FIXED" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_30" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Pixel_3a_API_30_x86]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -46,7 +49,6 @@
   <component name="ProjectId" id="1jtSNRBbgycGVe8J76uWt9qPFNG" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -54,6 +56,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.259122623">
@@ -75,6 +78,7 @@
       <option name="DEPLOY_AS_INSTANT" value="false" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
@@ -110,11 +114,16 @@
       </Native>
       <Profilers>
         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
         <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
@@ -201,12 +210,12 @@
       <option name="project" value="LOCAL" />
       <updated>1606374016936</updated>
     </task>
-    <task id="LOCAL-00011" summary="test version">
-      <created>1606374300248</created>
+    <task id="LOCAL-00011" summary="FIXED">
+      <created>1606376300324</created>
       <option name="number" value="00011" />
       <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
-      <updated>1606374300248</updated>
+      <updated>1606376300324</updated>
     </task>
     <option name="localTasksCounter" value="12" />
     <servers />
@@ -239,13 +248,19 @@
             </State>
           </value>
         </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
       </map>
     </option>
-    <option name="OPEN_TABS">
-      <set>
-        <option value="1" />
-      </set>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added calendar widget" />
@@ -254,8 +269,8 @@
     <MESSAGE value="THIS IS TOLGA! IM WORKING ON THE CREATE ACTIVITY LAYOUT!! I JUST ADDED SOME BOXES AND STUFF HAVENT MADE ANY STRINGS YET!!!!!" />
     <MESSAGE value="newEvent button opens the activity_create_event.xml&#10;added save button to activity_create_event.xml which sends back to main&#10;added red/orange gradient; gradient_background_red.xml&#10;added EditText variables to CreateEvent.java&#10;**need to send EditText values back to main to be displayed**" />
     <MESSAGE value="blah" />
-    <MESSAGE value="test version" />
-    <option name="LAST_COMMIT_MESSAGE" value="test version" />
+    <MESSAGE value="FIXED" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIXED" />
   </component>
   <component name="WindowStateProjectService">
     <state x="368" y="130" key="#TODO" timestamp="1604622453825">
@@ -295,10 +310,11 @@
       <screen x="0" y="23" width="1536" height="880" />
     </state>
     <state width="1494" height="342" key="GridCell.Tab.0.right/0.23.1536.880@0.23.1536.880" timestamp="1606264596057" />
-    <state x="368" y="203" key="Vcs.Push.Dialog.v2" timestamp="1606374304156">
-      <screen x="0" y="23" width="1536" height="880" />
+    <state x="613" y="286" key="Vcs.Push.Dialog.v2" timestamp="1606376304457">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="460" y="213" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605845316930" />
+    <state x="613" y="286" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.-363.1536.824@0.0.2560.1400" timestamp="1606376304457" />
     <state x="368" y="203" key="Vcs.Push.Dialog.v2/0.23.1536.880@0.23.1536.880" timestamp="1606374304156" />
     <state x="685" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605843691166">
       <screen x="0" y="0" width="1920" height="1040" />
