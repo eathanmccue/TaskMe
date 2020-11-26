@@ -192,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606267869624</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="blah">
+      <created>1606374016936</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1606374016936</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -237,7 +244,8 @@
     <MESSAGE value="testing changes between 2 people - THIS IS TOLGA" />
     <MESSAGE value="THIS IS TOLGA! IM WORKING ON THE CREATE ACTIVITY LAYOUT!! I JUST ADDED SOME BOXES AND STUFF HAVENT MADE ANY STRINGS YET!!!!!" />
     <MESSAGE value="newEvent button opens the activity_create_event.xml&#10;added save button to activity_create_event.xml which sends back to main&#10;added red/orange gradient; gradient_background_red.xml&#10;added EditText variables to CreateEvent.java&#10;**need to send EditText values back to main to be displayed**" />
-    <option name="LAST_COMMIT_MESSAGE" value="newEvent button opens the activity_create_event.xml&#10;added save button to activity_create_event.xml which sends back to main&#10;added red/orange gradient; gradient_background_red.xml&#10;added EditText variables to CreateEvent.java&#10;**need to send EditText values back to main to be displayed**" />
+    <MESSAGE value="blah" />
+    <option name="LAST_COMMIT_MESSAGE" value="blah" />
   </component>
   <component name="WindowStateProjectService">
     <state x="368" y="130" key="#TODO" timestamp="1604622453825">
@@ -252,11 +260,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="713" y="338" key="AndroidCreateXmlResourceDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605846636197" />
-    <state x="387" y="65" width="1020" height="800" key="CommitChangelistDialog2" timestamp="1606267869337">
+    <state x="387" y="65" width="1020" height="800" key="CommitChangelistDialog2" timestamp="1606374016772">
       <screen x="0" y="23" width="1536" height="880" />
     </state>
     <state x="484" y="50" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1605845789086" />
-    <state x="387" y="65" width="1020" height="800" key="CommitChangelistDialog2/0.23.1536.880@0.23.1536.880" timestamp="1606267869337" />
+    <state x="387" y="65" width="1020" height="800" key="CommitChangelistDialog2/0.23.1536.880@0.23.1536.880" timestamp="1606374016772" />
     <state x="154" y="100" key="DiffContextDialog" timestamp="1604622302030">
       <screen x="0" y="23" width="1536" height="880" />
     </state>
@@ -277,11 +285,11 @@
       <screen x="0" y="23" width="1536" height="880" />
     </state>
     <state width="1494" height="342" key="GridCell.Tab.0.right/0.23.1536.880@0.23.1536.880" timestamp="1606264596057" />
-    <state x="460" y="213" key="Vcs.Push.Dialog.v2" timestamp="1605845316930">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="368" y="203" key="Vcs.Push.Dialog.v2" timestamp="1606374019366">
+      <screen x="0" y="23" width="1536" height="880" />
     </state>
     <state x="460" y="213" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605845316930" />
-    <state x="368" y="203" key="Vcs.Push.Dialog.v2/0.23.1536.880@0.23.1536.880" timestamp="1604632109009" />
+    <state x="368" y="203" key="Vcs.Push.Dialog.v2/0.23.1536.880@0.23.1536.880" timestamp="1606374019366" />
     <state x="685" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605843691166">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
