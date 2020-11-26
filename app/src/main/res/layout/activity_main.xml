@@ -19,37 +19,47 @@
         android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"
         android:layout_gravity="center"/>
 
-    <TextView
-        android:id="@+id/taskHeader"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="66dp"
-        android:paddingTop="12dp"
-        android:paddingBottom="12dp"
-        android:text="@string/displayTaskTitle"
-        android:textAlignment="center"
-        android:textColor="#FFF176"
-        android:textSize="28sp"
-        android:textStyle="bold"/>
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="bottom|right">
+        <TextView
+            android:id="@+id/taskHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="66dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:layout_marginStart="-10dp"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/lineto"
+            android:text="@string/displayTaskTitle"
+            android:textColor="#FFF176"
+            android:textSize="28sp"
+            android:textStyle="bold"/>
 
         <Button
             android:id="@+id/push_button"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginRight="10dp"
+            android:onClick="addEvent"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
             android:background="@drawable/button_bg_round"
             android:text="@string/newEvent"
-            android:textSize="42sp"
-            android:layout_gravity="right"/>
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_gravity="right|center_vertical"/>
+    </LinearLayout>
 
-    </RelativeLayout>
 
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tasksListView"
+        android:layout_marginBottom="10dp">
 
-
+    </ListView>
 
 </LinearLayout>
