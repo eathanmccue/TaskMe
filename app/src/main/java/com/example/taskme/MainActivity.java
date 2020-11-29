@@ -39,8 +39,8 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerView = findViewById(R.id.tasksListView);
         no_tasks_found = findViewById(R.id.no_tasks_found);
-
         no_tasks_found.setVisibility(View.GONE);
+
         storeDataInArray();
 
     }
@@ -71,6 +71,11 @@ public class MainActivity extends AppCompatActivity {
         time_list.clear();
 
         if (data.getCount() > 0){
+            if (recyclerView.getVisibility() != View.VISIBLE){
+                no_tasks_found.setVisibility(View.GONE);
+                recyclerView.setVisibility(View.VISIBLE);
+
+            }
             while(data.moveToNext()){
 
                 // create an array of tasks objects
