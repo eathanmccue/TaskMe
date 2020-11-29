@@ -2,8 +2,13 @@ package com.example.taskme;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class TasksDbHelper extends SQLiteOpenHelper {
     // db info
@@ -29,23 +34,22 @@ public class TasksDbHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String create_table = "CREATE TABLE IF NOT EXISTS "+TABLE_NAME+" ( " +
-                "`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL ,  " +
-                "`task_name` TEXT NOT NULL , " +
-                "`task_desc` TEXT NOT NULL ,  " +
-                "`date` VARCHAR(10) NOT NULL ,  " +
-                "`time` VARCHAR(5) NOT NULL ,  " +
-                "`is_reminder` INT NOT NULL ,  " +
-                "`is_repeat` INT NOT NULL ,  " +
-                "`is_important` INT NOT NULL ,  " +
-                "`is_goal` INT NOT NULL )";
+                "id INTEGER PRIMARY KEY AUTOINCREMENT,  " +
+                "task_name TEXT, " +
+                "task_desc TEXT,  " +
+                "date TEXT,  " +
+                "time TEXT,  " +
+                "is_reminder INT,  " +
+                "is_repeat INT,  " +
+                "is_important INT,  " +
+                "is_goal INT)";
 
         db.execSQL(create_table);
     }
 
     // not the methods to insert, delete data from table.
     public void addTask(NewTaskDetails newTaskDetails){
-        SQLiteDatabase db = getWritableDatabase();
-        db.beginTransaction();
+        SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues contentValues = new ContentValues();
         contentValues.put("task_name", newTaskDetails.name);
@@ -58,15 +62,14 @@ public class TasksDbHelper extends SQLiteOpenHelper {
         contentValues.put("is_repeat", newTaskDetails.is_repeat);
         contentValues.put("is_goal", newTaskDetails.is_goal);
 
-        db.insertOrThrow(TABLE_NAME, null, contentValues);
-        db.setTransactionSuccessful();
-        db.endTransaction();
-
+        db.insert(TABLE_NAME, null, contentValues);
     }
-    public static synchronized TasksDbHelper getsInstance(Context context) {
-        if (sInstance == null)
-            sInstance = new TasksDbHelper(context.getApplicationContext());
-        return sInstance;
+
+    public Cursor getTasks(){
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor data = db.rawQuery("SELECT * FROM tasks", null);
+        return data;
+
     }
 
     @Override
