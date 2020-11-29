@@ -77,7 +77,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
             while(data.moveToNext()){
-
                 // create an array of tasks objects
                 tasks_ids.add(data.getString(0));
                 task_name_list.add(data.getString(1));

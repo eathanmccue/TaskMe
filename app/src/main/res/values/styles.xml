@@ -6,6 +6,7 @@
         <item name="colorPrimary">#4F68F1</item>
         <item name="colorPrimaryDark">#4F68F1</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">#215993</item>
     </style>
     <style name="CalenderViewCustom" parent="Theme.AppCompat">
         <item name="colorAccent">#30CC7B</item>
