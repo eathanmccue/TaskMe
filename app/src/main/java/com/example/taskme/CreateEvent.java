@@ -28,16 +28,7 @@ public class CreateEvent extends AppCompatActivity {
         date = findViewById(R.id.createDate);
         time = findViewById(R.id.createTime);
 
-        NewTaskDetails newTask = new NewTaskDetails();
-        newTask.name = name.getText().toString();
-        newTask.desc = description.getText().toString();
-        newTask.date = date.getText().toString();
-        newTask.time = time.getText().toString();
-
-        newTask.is_goal = 1;
-        newTask.is_important = 1;
-        newTask.is_reminder = 1;
-        newTask.is_repeat = 1;
+        NewTaskDetails newTask = new NewTaskDetails(name.getText().toString(), description.getText().toString(), date.getText().toString(), time.getText().toString(), 1, 1 ,1,1 );
 
         helper.addTask(newTask);
 
