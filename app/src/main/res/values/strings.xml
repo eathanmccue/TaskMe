@@ -12,4 +12,5 @@
     <string name="dateHint">dd/mm/yyyy</string>
     <string name="timeHint">23:59</string>
     <string name="broken">brokenn</string>
+    <string name="no_tasks_found">No tasks added, add a new task by clicking the + button!</string>
 </resources>
