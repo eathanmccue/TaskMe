@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:background="@android:color/transparent"
+        app:cardCornerRadius="10dp">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:elevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="25dp"
+                        android:textColor="#E3E3E3"
+                        android:textSize="20sp"
+                        android:text="Task name."/>
+                    <EditText
+                        android:id="@+id/createName"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="@android:color/white"
+                        android:textCursorDrawable="@android:color/white"
+                        android:cursorVisible="true"
+                        android:background="@drawable/edit_text_bg"
+                        android:focusedByDefault="true"
+                        android:hint="Choose a beautiful name for your task."
+                        android:padding="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="25dp"
+                        android:textColor="#E3E3E3"
+                        android:textSize="20sp"
+                        android:text="Task description."/>
+                    <EditText
+                        android:id="@+id/createDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="@android:color/white"
+                        android:textCursorDrawable="@android:color/white"
+                        android:background="@drawable/edit_text_bg"
+                        android:hint="Wrtie a brief description that gives a bit info to your task!"
+                        android:gravity="top"
+                        android:padding="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="25dp"
+                        android:textColor="#E3E3E3"
+                        android:textSize="20sp"
+                        android:text="Choose date."/>
+                    <EditText
+                        android:id="@+id/createDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="@android:color/white"
+                        android:textCursorDrawable="@android:color/white"
+                        android:background="@drawable/edit_text_bg"
+                        android:hint="Choose a date till you can procastinate."
+                        android:inputType="date"
+                        android:ems="8"
+                        android:padding="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="25dp"
+                        android:textColor="#E3E3E3"
+                        android:textSize="20sp"
+                        android:text="Choose time."/>
+                    <EditText
+                        android:id="@+id/createTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="@android:color/white"
+                        android:textCursorDrawable="@android:color/white"
+                        android:background="@drawable/edit_text_bg"
+                        android:hint="Choose a deadline!"
+                        android:autofillHints=""
+                        android:inputType="time"
+                        android:ems="5"
+                        android:padding="10dp"/>
+
+                <CheckBox
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="15dp"
+                    android:text="Mark as important"
+                    />
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="5dp"
+                        android:layout_marginBottom="70dp"
+
+                        android:layout_marginTop="40dp">
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:onClick="saveButton"
+                            android:textSize="20sp"
+                            android:layout_height="match_parent"
+                            android:padding="10dp"
+                            android:background="#E3E3E3"
+                            android:textColor="@android:color/black"
+                            android:text="Add"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
