@@ -37,10 +37,7 @@ public class TasksDbHelper extends SQLiteOpenHelper {
                 "task_desc TEXT,  " +
                 "date TEXT,  " +
                 "time TEXT,  " +
-                "is_reminder INT,  " +
-                "is_repeat INT,  " +
-                "is_important INT,  " +
-                "is_goal INT)";
+                "is_important INT)";
 
         db.execSQL(create_table);
     }
@@ -54,11 +51,7 @@ public class TasksDbHelper extends SQLiteOpenHelper {
         contentValues.put("task_desc", newTaskDetails.desc);
         contentValues.put("date", newTaskDetails.date);
         contentValues.put("time", newTaskDetails.time);
-        contentValues.put("is_goal", newTaskDetails.is_goal);
         contentValues.put("is_important", newTaskDetails.is_important);
-        contentValues.put("is_reminder", newTaskDetails.is_reminder);
-        contentValues.put("is_repeat", newTaskDetails.is_repeat);
-        contentValues.put("is_goal", newTaskDetails.is_goal);
 
         db.insert(TABLE_NAME, null, contentValues);
     }
