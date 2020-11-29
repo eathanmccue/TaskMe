@@ -2,8 +2,9 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:fontFamily">@font/lineto</item>
+        <item name="colorPrimary">#4F68F1</item>
+        <item name="colorPrimaryDark">#4F68F1</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
     <style name="CalenderViewCustom" parent="Theme.AppCompat">
