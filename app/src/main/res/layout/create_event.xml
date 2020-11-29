@@ -67,7 +67,7 @@
                         android:textColor="@android:color/white"
                         android:textCursorDrawable="@android:color/white"
                         android:background="@drawable/edit_text_bg"
-                        android:hint="Wrtie a brief description that gives a bit info to your task!"
+                        android:hint="Write a brief description that gives a bit info to your task!"
                         android:gravity="top"
                         android:padding="10dp"/>
 
