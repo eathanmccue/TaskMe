@@ -5,21 +5,19 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.util.Log;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class TasksDbHelper extends SQLiteOpenHelper {
     // db info
     private static final String DATABASE_NAME = "TasksDb";
     private static final int DATABASE_VERSION = 1;
 
-    // instance
-    private static TasksDbHelper sInstance;
-
     // table name
     private static final String TABLE_NAME = "tasks";
+
+    // Other
+    Cursor data;
+    SQLiteDatabase db;
 
     public TasksDbHelper(Context context){
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -66,10 +64,18 @@ public class TasksDbHelper extends SQLiteOpenHelper {
     }
 
     public Cursor getTasks(){
-        SQLiteDatabase db = this.getReadableDatabase();
-        Cursor data = db.rawQuery("SELECT * FROM tasks", null);
+        db = this.getReadableDatabase();
+        data = db.rawQuery("SELECT * FROM tasks", null);
         return data;
 
+    }
+
+    public boolean isImportant(int id){
+        db = this.getReadableDatabase();
+        data = db.rawQuery("SELECT * FROM tasks where id = "+id, null);
+
+
+        return data.getString(7).equals("1");
     }
 
     @Override
