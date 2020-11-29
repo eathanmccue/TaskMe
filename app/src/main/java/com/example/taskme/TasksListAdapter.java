@@ -17,16 +17,16 @@ public class TasksListAdapter extends RecyclerView.Adapter<TasksListAdapter.MyVi
 
     Context context;
 
-    ArrayList<String> task_name_list, task_description_list, date_list, time_list;
+    ArrayList<String> tasks_ids, task_name_list, task_description_list, date_list, time_list;
 
-    TasksListAdapter(Context context, ArrayList<String> task_name_list, ArrayList <String> task_description_list, ArrayList <String> date_list, ArrayList <String> time_list
+    TasksListAdapter(Context context, ArrayList<String> tasks_ids, ArrayList<String> task_name_list, ArrayList <String> task_description_list, ArrayList <String> date_list, ArrayList <String> time_list
     ){
         this.context = context;
+        this.tasks_ids = tasks_ids;
         this.task_name_list = task_name_list;
         this.task_description_list = task_description_list;
         this.date_list = date_list;
         this.time_list = time_list;
-
     }
 
     @NonNull
@@ -63,7 +63,7 @@ public class TasksListAdapter extends RecyclerView.Adapter<TasksListAdapter.MyVi
             time = itemView.findViewById(R.id.time);
 
             cardView = itemView.findViewById(R.id.card_view);
-            cardView.setCardBackgroundColor(Color.parseColor("#B222212E"));
+            cardView.setCardBackgroundColor(Color.parseColor("#B222212E")); // as we are using older api level
             cardView.setElevation(0);
         }
     }
