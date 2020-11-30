@@ -1,18 +1,16 @@
 package com.example.taskme;
 
 import android.content.Context;
-import android.database.sqlite.SQLiteDatabase;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
-import android.util.AttributeSet;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.cardview.widget.CardView;
@@ -26,8 +24,20 @@ public class TasksListAdapter extends RecyclerView.Adapter<TasksListAdapter.MyVi
     ArrayList<String> tasks_ids, task_name_list, task_description_list, date_list, time_list;
 
     TasksDbHelper tasksDbHelper;
+    RecyclerView recyclerView;
 
-    TasksListAdapter(Context context, ArrayList<String> tasks_ids, ArrayList<String> task_name_list, ArrayList <String> task_description_list, ArrayList <String> date_list, ArrayList <String> time_list
+    private  final View.OnClickListener onClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            int itemPosition = recyclerView.getChildAdapterPosition(v);
+            Intent intent = new Intent(recyclerView.getContext(), CreateEvent.class);
+            intent.putExtra("taskId", Integer.parseInt(tasks_ids.get(itemPosition)));
+            recyclerView.getContext().startActivity(intent);
+
+        }
+    };
+
+    TasksListAdapter(Context context, ArrayList<String> tasks_ids, ArrayList<String> task_name_list, ArrayList <String> task_description_list, ArrayList <String> date_list, ArrayList <String> time_list, RecyclerView recyclerView
     ){
         this.context = context;
         this.tasks_ids = tasks_ids;
@@ -35,6 +45,7 @@ public class TasksListAdapter extends RecyclerView.Adapter<TasksListAdapter.MyVi
         this.task_description_list = task_description_list;
         this.date_list = date_list;
         this.time_list = time_list;
+        this.recyclerView = recyclerView;
     }
 
     @NonNull
@@ -42,6 +53,7 @@ public class TasksListAdapter extends RecyclerView.Adapter<TasksListAdapter.MyVi
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.task_item_row, parent, false);
+        view.setOnClickListener(onClickListener);
 
         return new MyViewHolder(view);
     }
@@ -73,7 +85,6 @@ public class TasksListAdapter extends RecyclerView.Adapter<TasksListAdapter.MyVi
         TextView task_name, task_description, date, time;
         CardView cardView;
         ImageView imageView;
-        TasksDbHelper tasksDbHelper;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
