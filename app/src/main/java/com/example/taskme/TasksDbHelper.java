@@ -3,6 +3,7 @@ package com.example.taskme;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
+import android.database.DatabaseUtils;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
@@ -64,6 +65,30 @@ public class TasksDbHelper extends SQLiteOpenHelper {
 
     }
 
+    public Cursor getSingleTask(int task_id){
+        db = this.getReadableDatabase();
+        data = db.rawQuery("SELECT * FROM tasks WHERE id = "+task_id, null);
+        if (data != null && data.moveToFirst())
+            return data;
+        else
+            return null;
+    }
+    public boolean deleteTask(int task_id){
+        db = this.getReadableDatabase();
+        return db.delete("tasks", "id"+ "=" +task_id, null) > 0 ;
+    }
+
+    public void updateTask(int task_id, String task_name, String task_desc, String date, String time, String is_imp) {
+        db = this.getReadableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("task_name", task_name);
+        contentValues.put("task_desc", task_desc);
+        contentValues.put("date", date);
+        contentValues.put("time", time);
+        contentValues.put("is_important", is_imp);
+
+        db.update("tasks", contentValues, "id = "+task_id+" ", null);
+    }
     public boolean isImportant(int id){
         SQLiteDatabase test = this.getReadableDatabase();
         Cursor res = test.rawQuery("SELECT * FROM tasks WHERE id = "+id, null);
@@ -81,4 +106,6 @@ public class TasksDbHelper extends SQLiteOpenHelper {
             onCreate(db);
         }
     }
+
+
 }
