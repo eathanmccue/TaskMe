@@ -13,4 +13,5 @@
     <string name="timeHint">23:59</string>
     <string name="broken">brokenn</string>
     <string name="no_tasks_found">No tasks added, add a new task by clicking the + button!</string>
+    <string name="tip">TIP: You can edit or delete tasks by clicking on it!</string>
 </resources>

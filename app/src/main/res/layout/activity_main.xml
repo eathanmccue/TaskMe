@@ -52,7 +52,12 @@
             android:gravity="center"
             android:layout_gravity="right|center_vertical"/>
     </LinearLayout>
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:text="@string/tip"/>
     <TextView
         android:id="@+id/no_tasks_found"
         android:layout_width="300dp"
@@ -66,6 +71,8 @@
         android:background="@drawable/no_tasks_found_bg"
         android:textAlignment="center"
         android:text="@string/no_tasks_found"/>
+
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
