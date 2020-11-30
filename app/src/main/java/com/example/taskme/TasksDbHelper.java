@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 
 public class TasksDbHelper extends SQLiteOpenHelper {
@@ -64,11 +65,13 @@ public class TasksDbHelper extends SQLiteOpenHelper {
     }
 
     public boolean isImportant(int id){
-        db = this.getReadableDatabase();
-        data = db.rawQuery("SELECT * FROM tasks where id = "+id, null);
+        SQLiteDatabase test = this.getReadableDatabase();
+        Cursor res = test.rawQuery("SELECT * FROM tasks WHERE id = "+id, null);
 
-
-        return data.getString(7).equals("1");
+        if (res != null && res.moveToFirst()){
+            return res.getString(5).equals("1");
+        }
+        return false;
     }
 
     @Override
