@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -56,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
 
         if(resultCode == 2){
+            Log.d("resultcode", String.valueOf(resultCode));
             storeDataInArray();
         }
     }
@@ -94,9 +96,15 @@ public class MainActivity extends AppCompatActivity {
 
     }
     private void inflateRecyclerView() {
-        tasksListAdapter = new TasksListAdapter(this, tasks_ids, task_name_list, task_description_list, date_list, time_list);
+        tasksListAdapter = new TasksListAdapter(this, tasks_ids, task_name_list, task_description_list, date_list, time_list, recyclerView);
         recyclerView.setAdapter(tasksListAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.bringToFront();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        storeDataInArray();
     }
 }
