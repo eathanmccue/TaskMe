@@ -50,7 +50,7 @@ public class TasksListAdapter extends RecyclerView.Adapter<TasksListAdapter.MyVi
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         tasksDbHelper = new TasksDbHelper(holder.itemView.getContext());
-        Log.d("isimportanttag", String.valueOf(position));
+
         if (tasksDbHelper.isImportant(Integer.parseInt(String.valueOf(tasks_ids.get(position)))))
             holder.imageView.setVisibility(View.VISIBLE);
         else{

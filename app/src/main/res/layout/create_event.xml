@@ -33,7 +33,7 @@
                         android:layout_marginTop="25dp"
                         android:textColor="#E3E3E3"
                         android:textSize="20sp"
-                        android:text="Task name."/>
+                        android:text="Task name"/>
                     <EditText
                         android:id="@+id/createName"
                         android:layout_width="match_parent"
@@ -56,7 +56,7 @@
                         android:layout_marginTop="25dp"
                         android:textColor="#E3E3E3"
                         android:textSize="20sp"
-                        android:text="Task description."/>
+                        android:text="Task description"/>
                     <EditText
                         android:id="@+id/createDescription"
                         android:layout_width="match_parent"
@@ -78,7 +78,7 @@
                         android:layout_marginTop="25dp"
                         android:textColor="#E3E3E3"
                         android:textSize="20sp"
-                        android:text="Choose date."/>
+                        android:text="Choose date"/>
                     <EditText
                         android:id="@+id/createDate"
                         android:layout_width="match_parent"
@@ -101,7 +101,7 @@
                         android:layout_marginTop="25dp"
                         android:textColor="#E3E3E3"
                         android:textSize="20sp"
-                        android:text="Choose time."/>
+                        android:text="Choose time"/>
                     <EditText
                         android:id="@+id/createTime"
                         android:layout_width="match_parent"

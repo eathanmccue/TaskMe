@@ -60,6 +60,13 @@
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     />
+                <ImageView
+                    android:id="@+id/important_image"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/star"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="3dp"/>
 
             </LinearLayout>
             <TextView
