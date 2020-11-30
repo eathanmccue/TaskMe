@@ -7,12 +7,14 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
 public class CreateEvent extends AppCompatActivity {
 
     public EditText name, description, date, time;
+    CheckBox checkBox;
     TasksDbHelper helper;
     CardView cardView;
 
@@ -35,13 +37,24 @@ public class CreateEvent extends AppCompatActivity {
         description = findViewById(R.id.createDescription);
         date = findViewById(R.id.createDate);
         time = findViewById(R.id.createTime);
+        checkBox = findViewById(R.id.checkbox);
 
         if (name.getText().toString().trim().isEmpty() || description.getText().toString().trim().isEmpty() || date.getText().toString().trim().isEmpty() || time.getText().toString().trim().isEmpty()){
             Toast.makeText(this, "You must fill up all fields!", Toast.LENGTH_LONG).show();
             return;
         }
 
-        NewTaskDetails newTask = new NewTaskDetails(name.getText().toString(), description.getText().toString(), date.getText().toString(), time.getText().toString(), 1 );
+        if(name.getText().toString().length() > 30){
+            Toast.makeText(this, "Title is too long!", Toast.LENGTH_LONG).show();
+            return;
+        }
+        int is_important = 0;
+
+        if (checkBox.isChecked()){
+            is_important = 1;
+        }
+
+        NewTaskDetails newTask = new NewTaskDetails(name.getText().toString(), description.getText().toString(), date.getText().toString(), time.getText().toString(), is_important);
 
         helper.addTask(newTask);
 
