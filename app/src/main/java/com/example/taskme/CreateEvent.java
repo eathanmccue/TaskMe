@@ -19,13 +19,13 @@ public class CreateEvent extends AppCompatActivity {
     TasksDbHelper helper;
     ImageButton imageButton;
     int task_id;
+    String sday, smonth, syear;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.create_event);
-
 
         name = findViewById(R.id.createName);
         description = findViewById(R.id.createDescription);
@@ -44,6 +44,11 @@ public class CreateEvent extends AppCompatActivity {
 
         Intent intent = getIntent();
         task_id = intent.getIntExtra("taskId", -1);
+        sday = intent.getStringExtra("sday");
+        smonth = intent.getStringExtra("smonth");
+        syear = intent.getStringExtra("syear");
+
+        date.setText(String.format("%s/%s/%s", sday, smonth, syear));
 
         if (task_id != -1){
             // now display the data inside the fields
