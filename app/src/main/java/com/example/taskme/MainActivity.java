@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void createNewTask() {
         String sday = sDay.getText().toString();
-        String smonth = sMonth.getText().toString();
+        int smonth = Integer.parseInt(String.valueOf(sMonth.getText()))+1;
         String syear = sYear.getText().toString();
 
         Intent intent = new Intent(getApplicationContext(), CreateEvent.class);

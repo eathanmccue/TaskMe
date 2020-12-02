@@ -18,8 +18,8 @@ public class CreateEvent extends AppCompatActivity {
     CheckBox checkBox;
     TasksDbHelper helper;
     ImageButton imageButton;
-    int task_id;
-    String sday, smonth, syear;
+    int task_id, smonth;
+    String sday, syear;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,7 +45,7 @@ public class CreateEvent extends AppCompatActivity {
         Intent intent = getIntent();
         task_id = intent.getIntExtra("taskId", -1);
         sday = intent.getStringExtra("sday");
-        smonth = intent.getStringExtra("smonth");
+        smonth = intent.getIntExtra("smonth", 0);
         syear = intent.getStringExtra("syear");
 
         date.setText(String.format("%s/%s/%s", sday, smonth, syear));
