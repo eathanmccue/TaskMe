@@ -1,13 +1,10 @@
 package com.example.taskme;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
 import android.database.Cursor;
-import android.graphics.Color;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -20,7 +17,6 @@ public class CreateEvent extends AppCompatActivity {
     public EditText name, description, date, time;
     CheckBox checkBox;
     TasksDbHelper helper;
-    CardView cardView;
     ImageButton imageButton;
     int task_id;
 
@@ -30,9 +26,6 @@ public class CreateEvent extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.create_event);
 
-        cardView = findViewById(R.id.card_view);
-        cardView.setCardBackgroundColor(Color.parseColor("#86161522"));
-        cardView.setElevation(0);
 
         name = findViewById(R.id.createName);
         description = findViewById(R.id.createDescription);
