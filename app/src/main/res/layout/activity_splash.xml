@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"
+        android:text="TaskMe"
+        android:letterSpacing="0.1"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_above="@+id/dev_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:fontFamily="@font/lineto"
+        android:textColor="@color/white"
+        android:text="A project by"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/dev_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:letterSpacing="0.08"
+        android:fontFamily="@font/lineto"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:text="Group - A"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:paddingTop="2dp"/>
+
+</RelativeLayout>
