@@ -69,6 +69,9 @@ public class MainActivity extends AppCompatActivity {
                 sDay.setText(String.valueOf(dayOfMonth));
                 sMonth.setText(String.valueOf(month));
                 sYear.setText(String.valueOf(year));
+
+                createNewTask();
+
             }
         });
 
@@ -86,11 +89,17 @@ public class MainActivity extends AppCompatActivity {
 
     // Click event to add new task
     public void newEvent(View view) {
+
+        createNewTask();
+
+    }
+
+    private void createNewTask() {
         String sday = sDay.getText().toString();
         String smonth = sMonth.getText().toString();
         String syear = sYear.getText().toString();
 
-        Intent intent = new Intent(this, CreateEvent.class);
+        Intent intent = new Intent(getApplicationContext(), CreateEvent.class);
         intent.putExtra("sday",sday);
         intent.putExtra("smonth",smonth);
         intent.putExtra("syear",syear);
