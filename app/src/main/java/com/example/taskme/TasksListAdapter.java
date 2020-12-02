@@ -64,9 +64,9 @@ public class TasksListAdapter extends RecyclerView.Adapter<TasksListAdapter.MyVi
         tasksDbHelper = new TasksDbHelper(holder.itemView.getContext());
 
         if (tasksDbHelper.isImportant(Integer.parseInt(String.valueOf(tasks_ids.get(position)))))
-            holder.imageView.setVisibility(View.VISIBLE);
+            holder.date.setTextColor(Color.parseColor("#C9DA00"));
         else{
-            holder.imageView.setVisibility(View.GONE);
+            holder.date.setTextColor(Color.parseColor("#FFFFFF"));
         }
 
         holder.task_name.setText(String.valueOf(task_name_list.get(position)));
@@ -92,7 +92,6 @@ public class TasksListAdapter extends RecyclerView.Adapter<TasksListAdapter.MyVi
             task_description = itemView.findViewById(R.id.task_decription);
             date = itemView.findViewById(R.id.date);
             time = itemView.findViewById(R.id.time);
-            imageView = itemView.findViewById(R.id.important_image);
 
             cardView = itemView.findViewById(R.id.card_view);
             cardView.setCardBackgroundColor(Color.parseColor("#B222212E")); // as we are using older api level
