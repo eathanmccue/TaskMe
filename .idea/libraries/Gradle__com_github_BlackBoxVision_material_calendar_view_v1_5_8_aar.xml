@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.BlackBoxVision:material-calendar-view:v1.5.8@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/658e5f5a5e0a145036c9167483ffd4ad/jetified-material-calendar-view-v1.5.8/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/658e5f5a5e0a145036c9167483ffd4ad/jetified-material-calendar-view-v1.5.8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/658e5f5a5e0a145036c9167483ffd4ad/jetified-material-calendar-view-v1.5.8/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.BlackBoxVision/material-calendar-view/v1.5.8/67bd317ea856e1b602309c2845199108df420f30/material-calendar-view-v1.5.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
